@@ -1,7 +1,4 @@
-import Id from "../../../@shared/domain/value-object/id.value-object";
-import Product from "../../domain/product.entity";
 import ProductGateway from "../../gateway/product.gateway";
-import { AddProductInputDto, AddProductOutputDto } from "../add-product/add-product.dto";
 import { CheckStockInputDto, CheckStockOutputDto } from "./check-stock.dto";
 
 export default class CheckStockUseCase{
