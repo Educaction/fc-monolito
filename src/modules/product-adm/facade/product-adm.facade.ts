@@ -1,19 +1,19 @@
-import UsecaseInterface from "../../@shared/domain/usecase/use-case.interface";
+import UseCaseInterface from "../../@shared/domain/usecase/use-case.interface";
 import ProductAdmFacadeInterface, {
   AddProductFacadeInputDto,
   CheckStockFacadeInputDto,
   CheckStockFacadeOutputDto
-} from "./product-adm-facade.interface";
+} from "./product-adm.facade.interface";
 
 export interface UseCasesProps {
-  addUseCase: UsecaseInterface;
-  stockUsecase: UsecaseInterface;
+  addUseCase: UseCaseInterface;
+  stockUsecase: UseCaseInterface;
 }
 
 export default class ProductAdmFacade implements ProductAdmFacadeInterface {
 
-  private _addUsecase: UsecaseInterface;
-  private _checkStockUsecase: UsecaseInterface;
+  private _addUsecase: UseCaseInterface;
+  private _checkStockUsecase: UseCaseInterface;
 
   constructor(usecasesProps: UseCasesProps) {
     this._addUsecase = usecasesProps.addUseCase;
