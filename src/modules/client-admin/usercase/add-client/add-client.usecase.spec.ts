@@ -1,4 +1,4 @@
-import AddClientUsecase from "./add-client.ucsecase";
+import AddClientUsecase from "./add-client.usecase";
 
 const MockRepository = () => {
   return {
