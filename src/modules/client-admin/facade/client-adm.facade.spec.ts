@@ -51,14 +51,16 @@ describe("ClientAdmFacade test", () => {
   });
 
   it("should find a client", async () => {
-    const repository = new ClientRepository();
-    const addUsecase = new AddClientUsecase(repository);    
-    const findUsecase = new FindClientUsecase(repository);
-    const facade = new ClientAdmFacade({
-      addUsecase: addUsecase,
-      findUsecase: findUsecase
-    })
+    // const repository = new ClientRepository();
+    // const addUsecase = new AddClientUsecase(repository);    
+    // const findUsecase = new FindClientUsecase(repository);
+    // const facade = new ClientAdmFacade({
+    //   addUsecase: addUsecase,
+    //   findUsecase: findUsecase
+    // })
 
+    const facade = ClientAdmFacadeFactory.create();
+    
     const input = {
       id: "1",
       name: "Client 1",
